@@ -74,7 +74,7 @@ public class HTML {
 	}
 
 	private void currentCovid19SpreadingVersion(Document doc) {
-		doc.body().appendElement("<div style=\" float:left\">");
+		doc.body().appendElement("<div style=\" float:right\">");
 
 		for (int i = 0; i < firstOneString.size(); i++) {
 
