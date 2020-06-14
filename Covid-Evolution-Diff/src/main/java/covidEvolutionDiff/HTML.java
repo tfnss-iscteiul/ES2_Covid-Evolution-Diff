@@ -1,4 +1,5 @@
 package covidEvolutionDiff;
+
 import java.awt.Desktop;
 import java.io.*;
 import java.util.ArrayList;
@@ -73,6 +74,8 @@ public class HTML {
 	}
 
 	private void currentCovid19SpreadingVersion(Document doc) {
+		doc.body().appendElement("<div style=\" float:left\">");
+
 		for (int i = 0; i < firstOneString.size(); i++) {
 
 			String str = firstOneString.get(i).replaceAll("<", "&lt;");
@@ -84,5 +87,7 @@ public class HTML {
 				doc.body().append("<span style=\"background-color: #2ECC71\">" + str + "</span><br>");
 
 		}
+		doc.body().appendElement("</div>");
+
 	}
 }
