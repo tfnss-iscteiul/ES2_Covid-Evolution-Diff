@@ -20,6 +20,7 @@ public class HTML {
 		BufferedWriter bw = new BufferedWriter(new FileWriter(f));
 
 		Document doc = Jsoup.parse("<html></html>");
+		
 		doc.body().addClass("body-styles-cls");
 		doc.body().appendElement("div");
 
